@@ -1,8 +1,6 @@
 const path = require('path');
-const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -21,5 +19,16 @@ module.exports = {
       hash: false
     })
   ],
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ]
+  },
   devtool: 'source-map'
 };
