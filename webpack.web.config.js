@@ -1,5 +1,6 @@
 const merge = require('webpack-merge');
 const baseConfig = require('./webpack.config.js');
+const webpack = require('webpack');
 
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
@@ -11,8 +12,12 @@ module.exports = merge(baseConfig, {
       server: {
         baseDir: ['./', './dist']
       }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': '"web"'
+      }
     })
   ],
-  devtool: 'source-map',
   target: 'web'
 });
