@@ -1,13 +1,13 @@
 {
   "name": "desktop-web-phaser-starter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "an adventure into modern javascript gaming development",
   "main": "main.js",
   "scripts": {
     "desktop": "webpack --config webpack.desktop.config.js",
     "web": "webpack --config webpack.web.config.js"
   },
-  "repository": "",
+  "repository": "https://github.com/Raagh/web-desktop-phaser",
   "keywords": [
     "Electron",
     "Phaser",

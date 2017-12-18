@@ -69,5 +69,17 @@ module.exports = {
       'p2': p2
     }
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  externals: {
+    'electron': 'require("electron")',
+    'net': 'require("net")',
+    'remote': 'require("remote")',
+    'shell': 'require("shell")',
+    'app': 'require("app")',
+    'ipc': 'require("ipc")',
+    'fs': 'require("fs")',
+    'buffer': 'require("buffer")',
+    'system': '{}',
+    'file': '{}'
+  }
 };
