@@ -19,6 +19,10 @@
     "space-before-function-paren": [
       "error",
       "never"
+    ],
+    "eol-last": [
+      "error",
+      "never"
     ]
   },
   "globals": {

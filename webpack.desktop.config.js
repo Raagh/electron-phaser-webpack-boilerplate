@@ -17,5 +17,5 @@ module.exports = merge(baseConfig, {
       }
     })
   ],
-  target: 'electron'
+  target: 'electron-renderer'
 });
