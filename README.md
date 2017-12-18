@@ -4,7 +4,7 @@
 
 Simple boilerplate for creating html5 games using Phaser for Web and Destkop(through electron) with the latest web technologies.
 
--Phaser CE
--Webpack
--Electron
--ES6(Eslint and Babel)
+-Phaser CE.
+-Webpack.
+-Electron.
+-ES6(Eslint and Babel).
